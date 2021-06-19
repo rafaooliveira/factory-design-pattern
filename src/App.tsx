@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import {usersList} from './components/users'
-import FactoryAlunos from './components/factory';
+import {materialList} from './components/materials'
+import FactoryMaterials from './components/factory';
 
 
 
 function App() {
-  const [data] = useState({usersList})
+  const [data] = useState({materialList})
 
-  const listTypes = data?.usersList.items.map(item => (
-    <FactoryAlunos key={item.id} type={item.type} aluno={item}/>
+  const listTypes = data?.materialList.items.map(item => (
+    <FactoryMaterials key={item.id} type={item.type}/>
   ))
+  console.log('listTypes', listTypes)
   return (
     <div>
       {listTypes}
