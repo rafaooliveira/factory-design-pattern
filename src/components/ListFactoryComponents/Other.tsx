@@ -1,12 +1,11 @@
 import React from "react"
-
-const B = () => {
+const Other = () => {
   return(
     <>
-      <div>Aluno tipo B</div>
+      <ul>Other</ul>
       <hr></hr>
     </>
   )
 } 
 
-export default B
+export default Other
