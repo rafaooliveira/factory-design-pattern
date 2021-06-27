@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Design Pattern Factory with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Factory without switch case, ifs or Object Literals to validate the object that will be created
 
 ## Available Scripts
 
