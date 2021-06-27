@@ -2,7 +2,7 @@
 const Quiz = () => {
   return(
     <>
-      <div>Aluno tipo Quiz</div>
+      <div>Quiz</div>
       <hr></hr>
     </>
   )
