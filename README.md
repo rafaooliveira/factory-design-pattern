@@ -1,6 +1,6 @@
 # Design Pattern Factory with React
 
-Factory without switch case, ifs or Object Literals to validate the object that will be created
+Factory without switch case, ifs or Object Literals to validate the object that will be created | I used a custom Hook to create my elements
 
 ## Available Scripts
 
