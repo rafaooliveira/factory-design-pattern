@@ -1,22 +1,20 @@
 import React from "react"
-import Article from "./ListFactoryComponents/Article"
-import Video from "./ListFactoryComponents/Video"
-import Quiz from "./ListFactoryComponents/Quiz"
-import Other from "./ListFactoryComponents/Other"
-import Default from "./ListFactoryComponents/Default"
-
+import { typeMaterialFactory } from './typeFactory.hook'
 interface FactoryProps {
   type: string
+  material: any
 }
-const FactoryMaterials: React.FC<FactoryProps> = () => {
-  const Materials: any = {
-    article: <Article />,
-    video: <Video />,
-    quiz: <Quiz />,
-    other: <Other/>,
-    default: <Default/>
-  }
 
-  return Materials || Materials.default
+const FactoryMaterials: React.FC<FactoryProps> = ({type, material}) => {
+  const {addMaterial, getMaterial} = typeMaterialFactory()
+  
+  addMaterial(type, material)
+  getMaterial(type)
+  return (
+    <div>
+      {getMaterial(type)}
+      <hr/>
+    </div>
+  )
 }
 export default FactoryMaterials

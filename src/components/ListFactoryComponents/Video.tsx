@@ -3,7 +3,7 @@ import React from "react"
 const Video = () => {
   return(
     <>
-      <div>Aluno tipo Video</div>
+      <div>Video</div>
       <hr></hr>
     </>
   )
